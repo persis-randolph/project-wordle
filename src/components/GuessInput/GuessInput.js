@@ -16,6 +16,7 @@ function GuessInput({ addNewGuess, disabled }) {
         value={guess}
         onChange={(e) => setGuess(e.target.value.toUpperCase())}
         pattern="[A-Z]{2,5}"
+        title="Must be a 5-letter word"
         disabled={disabled}
       ></input>
     </form>
